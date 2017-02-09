@@ -1,0 +1,450 @@
+# Microsoft Developer Studio Generated Dependency File, included by Maze.mak
+
+..\Source\Bitmap.cpp : \
+	"..\Source\Bitmap.h"\
+	
+
+..\Source\Camera.cpp : \
+	"..\..\..\..\..\..\..\program files\microsoft visual studio\vc98\include\gl\glut.h"\
+	"..\Source\Camera.h"\
+	"..\Source\Cell.h"\
+	"..\Source\Constants.h"\
+	"..\Source\Game.h"\
+	"..\Source\Group.h"\
+	"..\Source\Label.h"\
+	"..\Source\Node.h"\
+	"..\Source\Reader.h"\
+	"..\Source\Vectors.h"\
+	
+
+..\Source\Cell.cpp : \
+	"..\..\..\..\..\..\..\program files\microsoft visual studio\vc98\include\gl\glut.h"\
+	"..\Source\Cell.h"\
+	"..\Source\Constants.h"\
+	"..\Source\Node.h"\
+	"..\Source\Vectors.h"\
+	
+
+..\Source\Collision.cpp : \
+	"..\..\..\..\..\..\..\program files\microsoft visual studio\vc98\include\gl\glut.h"\
+	"..\Source\Cell.h"\
+	"..\Source\Collision.h"\
+	"..\Source\Colour.h"\
+	"..\Source\Constants.h"\
+	"..\Source\Game.h"\
+	"..\Source\Group.h"\
+	"..\Source\Material.h"\
+	"..\Source\Maze.h"\
+	"..\Source\Node.h"\
+	"..\Source\Shape.h"\
+	"..\Source\Vectors.h"\
+	
+
+..\Source\Colour.cpp : \
+	"..\..\..\..\..\..\..\program files\microsoft visual studio\vc98\include\gl\glut.h"\
+	"..\Source\Colour.h"\
+	"..\Source\Constants.h"\
+	
+
+..\Source\Control.cpp : \
+	"..\..\..\..\..\..\..\program files\microsoft visual studio\vc98\include\gl\glut.h"\
+	"..\Source\Camera.h"\
+	"..\Source\Cell.h"\
+	"..\Source\Colour.h"\
+	"..\Source\Constants.h"\
+	"..\Source\Game.h"\
+	"..\Source\Group.h"\
+	"..\Source\Label.h"\
+	"..\Source\Node.h"\
+	"..\Source\Reference.h"\
+	"..\Source\Scene.h"\
+	"..\Source\Screen.h"\
+	"..\Source\Sound.h"\
+	"..\Source\Transform.h"\
+	"..\Source\Vectors.h"\
+	
+
+..\Source\Cylinder.cpp : \
+	"..\..\..\..\..\..\..\program files\microsoft visual studio\vc98\include\gl\glut.h"\
+	"..\Source\Cell.h"\
+	"..\Source\Colour.h"\
+	"..\Source\Constants.h"\
+	"..\Source\Cylinder.h"\
+	"..\Source\Disc.h"\
+	"..\Source\Game.h"\
+	"..\Source\Group.h"\
+	"..\Source\Label.h"\
+	"..\Source\Material.h"\
+	"..\Source\Node.h"\
+	"..\Source\Reader.h"\
+	"..\Source\Shape.h"\
+	"..\Source\Vectors.h"\
+	
+
+..\Source\Disc.cpp : \
+	"..\..\..\..\..\..\..\program files\microsoft visual studio\vc98\include\gl\glut.h"\
+	"..\Source\Cell.h"\
+	"..\Source\Colour.h"\
+	"..\Source\Constants.h"\
+	"..\Source\Disc.h"\
+	"..\Source\Game.h"\
+	"..\Source\Group.h"\
+	"..\Source\Label.h"\
+	"..\Source\Material.h"\
+	"..\Source\Node.h"\
+	"..\Source\Reader.h"\
+	"..\Source\Shape.h"\
+	"..\Source\Vectors.h"\
+	
+
+..\Source\Display.cpp : \
+	"..\..\..\..\..\..\..\program files\microsoft visual studio\vc98\include\gl\glut.h"\
+	"..\Source\Camera.h"\
+	"..\Source\Cell.h"\
+	"..\Source\Colour.h"\
+	"..\Source\Constants.h"\
+	"..\Source\Display.h"\
+	"..\Source\Game.h"\
+	"..\Source\Group.h"\
+	"..\Source\Label.h"\
+	"..\Source\Node.h"\
+	"..\Source\Scene.h"\
+	"..\Source\Screen.h"\
+	"..\Source\Vectors.h"\
+	
+
+..\Source\Game.cpp : \
+	"..\..\..\..\..\..\..\program files\microsoft visual studio\vc98\include\gl\glut.h"\
+	"..\Source\Camera.h"\
+	"..\Source\Cell.h"\
+	"..\Source\Collision.h"\
+	"..\Source\Colour.h"\
+	"..\Source\Constants.h"\
+	"..\Source\Game.h"\
+	"..\Source\Group.h"\
+	"..\Source\Label.h"\
+	"..\Source\Material.h"\
+	"..\Source\Maze.h"\
+	"..\Source\Node.h"\
+	"..\Source\Reference.h"\
+	"..\Source\Shape.h"\
+	"..\Source\Transform.h"\
+	"..\Source\Vectors.h"\
+	
+
+..\Source\Group.cpp : \
+	"..\..\..\..\..\..\..\program files\microsoft visual studio\vc98\include\gl\glut.h"\
+	"..\Source\Cell.h"\
+	"..\Source\Colour.h"\
+	"..\Source\Constants.h"\
+	"..\Source\Game.h"\
+	"..\Source\Group.h"\
+	"..\Source\Label.h"\
+	"..\Source\Light.h"\
+	"..\Source\Material.h"\
+	"..\Source\Node.h"\
+	"..\Source\Reader.h"\
+	"..\Source\Shape.h"\
+	"..\Source\Vectors.h"\
+	
+
+..\Source\Label.cpp : \
+	"..\..\..\..\..\..\..\program files\microsoft visual studio\vc98\include\gl\glut.h"\
+	"..\Source\Cell.h"\
+	"..\Source\Constants.h"\
+	"..\Source\Game.h"\
+	"..\Source\Group.h"\
+	"..\Source\Label.h"\
+	"..\Source\Node.h"\
+	"..\Source\Reader.h"\
+	"..\Source\Vectors.h"\
+	
+
+..\Source\Light.cpp : \
+	"..\..\..\..\..\..\..\program files\microsoft visual studio\vc98\include\gl\glut.h"\
+	"..\Source\Cell.h"\
+	"..\Source\Colour.h"\
+	"..\Source\Constants.h"\
+	"..\Source\Game.h"\
+	"..\Source\Group.h"\
+	"..\Source\Label.h"\
+	"..\Source\Light.h"\
+	"..\Source\Node.h"\
+	"..\Source\Reader.h"\
+	"..\Source\Vectors.h"\
+	
+
+..\Source\Main.cpp : \
+	"..\..\..\..\..\..\..\program files\microsoft visual studio\vc98\include\gl\glut.h"\
+	"..\Source\Camera.h"\
+	"..\Source\Cell.h"\
+	"..\Source\Colour.h"\
+	"..\Source\Constants.h"\
+	"..\Source\Display.h"\
+	"..\Source\Game.h"\
+	"..\Source\Group.h"\
+	"..\Source\Label.h"\
+	"..\Source\Node.h"\
+	"..\Source\Scene.h"\
+	"..\Source\Screen.h"\
+	"..\Source\Vectors.h"\
+	
+
+..\Source\Material.cpp : \
+	"..\..\..\..\..\..\..\program files\microsoft visual studio\vc98\include\gl\glut.h"\
+	"..\Source\Cell.h"\
+	"..\Source\Colour.h"\
+	"..\Source\Constants.h"\
+	"..\Source\Game.h"\
+	"..\Source\Group.h"\
+	"..\Source\Label.h"\
+	"..\Source\Material.h"\
+	"..\Source\Node.h"\
+	"..\Source\Reader.h"\
+	"..\Source\Vectors.h"\
+	
+
+..\Source\Maze.cpp : \
+	"..\..\..\..\..\..\..\program files\microsoft visual studio\vc98\include\gl\glut.h"\
+	"..\Source\Cell.h"\
+	"..\Source\Colour.h"\
+	"..\Source\Constants.h"\
+	"..\Source\Game.h"\
+	"..\Source\Group.h"\
+	"..\Source\Label.h"\
+	"..\Source\Material.h"\
+	"..\Source\Maze.h"\
+	"..\Source\Node.h"\
+	"..\Source\Plane.h"\
+	"..\Source\Reader.h"\
+	"..\Source\Shape.h"\
+	"..\Source\Vectors.h"\
+	
+
+..\Source\Mesh.cpp : \
+	"..\..\..\..\..\..\..\program files\microsoft visual studio\vc98\include\gl\glut.h"\
+	"..\Source\Cell.h"\
+	"..\Source\Colour.h"\
+	"..\Source\Constants.h"\
+	"..\Source\Game.h"\
+	"..\Source\Group.h"\
+	"..\Source\Label.h"\
+	"..\Source\Material.h"\
+	"..\Source\Mesh.h"\
+	"..\Source\Node.h"\
+	"..\Source\Reader.h"\
+	"..\Source\Shape.h"\
+	"..\Source\Triangle.h"\
+	"..\Source\Vectors.h"\
+	
+
+..\Source\Node.cpp : \
+	"..\..\..\..\..\..\..\program files\microsoft visual studio\vc98\include\gl\glut.h"\
+	"..\Source\Camera.h"\
+	"..\Source\Cell.h"\
+	"..\Source\Colour.h"\
+	"..\Source\Constants.h"\
+	"..\Source\Game.h"\
+	"..\Source\Group.h"\
+	"..\Source\Label.h"\
+	"..\Source\Light.h"\
+	"..\Source\Material.h"\
+	"..\Source\Node.h"\
+	"..\Source\Reader.h"\
+	"..\Source\Reference.h"\
+	"..\Source\Screen.h"\
+	"..\Source\Shape.h"\
+	"..\Source\Sound.h"\
+	"..\Source\Texture.h"\
+	"..\Source\Transform.h"\
+	"..\Source\Vectors.h"\
+	
+
+..\Source\Plane.cpp : \
+	"..\..\..\..\..\..\..\program files\microsoft visual studio\vc98\include\gl\glut.h"\
+	"..\Source\Cell.h"\
+	"..\Source\Colour.h"\
+	"..\Source\Constants.h"\
+	"..\Source\Game.h"\
+	"..\Source\Group.h"\
+	"..\Source\Label.h"\
+	"..\Source\Material.h"\
+	"..\Source\Node.h"\
+	"..\Source\Plane.h"\
+	"..\Source\Reader.h"\
+	"..\Source\Shape.h"\
+	"..\Source\Vectors.h"\
+	
+
+..\Source\Polyhedron.cpp : \
+	"..\..\..\..\..\..\..\program files\microsoft visual studio\vc98\include\gl\glut.h"\
+	"..\Source\Cell.h"\
+	"..\Source\Colour.h"\
+	"..\Source\Constants.h"\
+	"..\Source\Game.h"\
+	"..\Source\Group.h"\
+	"..\Source\Label.h"\
+	"..\Source\Light.h"\
+	"..\Source\Material.h"\
+	"..\Source\Node.h"\
+	"..\Source\Polyhedron.h"\
+	"..\Source\Reader.h"\
+	"..\Source\Shape.h"\
+	"..\Source\Vectors.h"\
+	
+
+..\Source\Reader.cpp : \
+	"..\..\..\..\..\..\..\program files\microsoft visual studio\vc98\include\gl\glut.h"\
+	"..\Source\Cell.h"\
+	"..\Source\Constants.h"\
+	"..\Source\Game.h"\
+	"..\Source\Group.h"\
+	"..\Source\Label.h"\
+	"..\Source\Node.h"\
+	"..\Source\Reader.h"\
+	"..\Source\Vectors.h"\
+	
+
+..\Source\Reference.cpp : \
+	"..\..\..\..\..\..\..\program files\microsoft visual studio\vc98\include\gl\glut.h"\
+	"..\Source\Cell.h"\
+	"..\Source\Constants.h"\
+	"..\Source\Game.h"\
+	"..\Source\Group.h"\
+	"..\Source\Label.h"\
+	"..\Source\Node.h"\
+	"..\Source\Reader.h"\
+	"..\Source\Reference.h"\
+	"..\Source\Vectors.h"\
+	
+
+..\Source\Scene.cpp : \
+	"..\..\..\..\..\..\..\program files\microsoft visual studio\vc98\include\gl\glut.h"\
+	"..\Source\Camera.h"\
+	"..\Source\Cell.h"\
+	"..\Source\Colour.h"\
+	"..\Source\Constants.h"\
+	"..\Source\Game.h"\
+	"..\Source\Group.h"\
+	"..\Source\Label.h"\
+	"..\Source\Light.h"\
+	"..\Source\Node.h"\
+	"..\Source\Reader.h"\
+	"..\Source\Scene.h"\
+	"..\Source\Screen.h"\
+	"..\Source\Vectors.h"\
+	
+
+..\Source\Screen.cpp : \
+	"..\..\..\..\..\..\..\program files\microsoft visual studio\vc98\include\gl\glut.h"\
+	"..\Source\Cell.h"\
+	"..\Source\Colour.h"\
+	"..\Source\Constants.h"\
+	"..\Source\Game.h"\
+	"..\Source\Group.h"\
+	"..\Source\Label.h"\
+	"..\Source\Node.h"\
+	"..\Source\Reader.h"\
+	"..\Source\Screen.h"\
+	"..\Source\Vectors.h"\
+	
+
+..\Source\Shape.cpp : \
+	"..\..\..\..\..\..\..\program files\microsoft visual studio\vc98\include\gl\glut.h"\
+	"..\Source\Cell.h"\
+	"..\Source\Colour.h"\
+	"..\Source\Constants.h"\
+	"..\Source\Cylinder.h"\
+	"..\Source\Disc.h"\
+	"..\Source\Game.h"\
+	"..\Source\Group.h"\
+	"..\Source\Light.h"\
+	"..\Source\Material.h"\
+	"..\Source\Maze.h"\
+	"..\Source\Mesh.h"\
+	"..\Source\Node.h"\
+	"..\Source\Plane.h"\
+	"..\Source\Polyhedron.h"\
+	"..\Source\Shape.h"\
+	"..\Source\Sphere.h"\
+	"..\Source\Triangle.h"\
+	"..\Source\Vectors.h"\
+	
+
+..\Source\Sound.cpp : \
+	"..\..\..\..\..\..\..\program files\microsoft visual studio\vc98\include\gl\glut.h"\
+	"..\Source\Cell.h"\
+	"..\Source\Constants.h"\
+	"..\Source\Game.h"\
+	"..\Source\Group.h"\
+	"..\Source\Label.h"\
+	"..\Source\Node.h"\
+	"..\Source\Reader.h"\
+	"..\Source\Sound.h"\
+	"..\Source\Vectors.h"\
+	
+
+..\Source\Sphere.cpp : \
+	"..\..\..\..\..\..\..\program files\microsoft visual studio\vc98\include\gl\glut.h"\
+	"..\Source\Cell.h"\
+	"..\Source\Colour.h"\
+	"..\Source\Constants.h"\
+	"..\Source\Game.h"\
+	"..\Source\Group.h"\
+	"..\Source\Label.h"\
+	"..\Source\Material.h"\
+	"..\Source\Node.h"\
+	"..\Source\Reader.h"\
+	"..\Source\Shape.h"\
+	"..\Source\Sphere.h"\
+	"..\Source\Vectors.h"\
+	
+
+..\Source\Texture.cpp : \
+	"..\..\..\..\..\..\..\program files\microsoft visual studio\vc98\include\gl\glut.h"\
+	"..\Source\Bitmap.h"\
+	"..\Source\Cell.h"\
+	"..\Source\Constants.h"\
+	"..\Source\Game.h"\
+	"..\Source\Group.h"\
+	"..\Source\Label.h"\
+	"..\Source\Node.h"\
+	"..\Source\Reader.h"\
+	"..\Source\Texture.h"\
+	"..\Source\Vectors.h"\
+	
+
+..\Source\Transform.cpp : \
+	"..\..\..\..\..\..\..\program files\microsoft visual studio\vc98\include\gl\glut.h"\
+	"..\Source\Cell.h"\
+	"..\Source\Constants.h"\
+	"..\Source\Game.h"\
+	"..\Source\Group.h"\
+	"..\Source\Label.h"\
+	"..\Source\Node.h"\
+	"..\Source\Reader.h"\
+	"..\Source\Transform.h"\
+	"..\Source\Vectors.h"\
+	
+
+..\Source\Triangle.cpp : \
+	"..\..\..\..\..\..\..\program files\microsoft visual studio\vc98\include\gl\glut.h"\
+	"..\Source\Cell.h"\
+	"..\Source\Colour.h"\
+	"..\Source\Constants.h"\
+	"..\Source\Game.h"\
+	"..\Source\Group.h"\
+	"..\Source\Label.h"\
+	"..\Source\Material.h"\
+	"..\Source\Node.h"\
+	"..\Source\Reader.h"\
+	"..\Source\Shape.h"\
+	"..\Source\Triangle.h"\
+	"..\Source\Vectors.h"\
+	
+
+..\Source\Vectors.cpp : \
+	"..\..\..\..\..\..\..\program files\microsoft visual studio\vc98\include\gl\glut.h"\
+	"..\Source\Constants.h"\
+	"..\Source\Vectors.h"\
+	

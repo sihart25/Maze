@@ -1,0 +1,511 @@
+/* SCREEN */
+Screen {
+	Screen {
+		Background 0.5 0.5 0.75
+	}
+}
+
+/* BRICK TEXTURE */
+Brick {
+	Texture {
+		Filename ../Data/Brick.bmp
+		Mipmap 1
+	}
+}
+
+/* HEDGE TEXTURE */
+Hedge {
+	Texture {
+		Filename ../Data/Hedge.bmp
+		Mipmap 1
+	}
+}
+
+/* AHHHHH SOUND */
+Ahhhhh {
+	Sound {
+		Filename ../Data/Ahhhhh.wav
+	}
+}
+
+/* DOH SOUND */
+Doh {
+	Sound {
+		Filename ../Data/Doh.wav
+	}
+}
+
+/* WOOHOO SOUND */
+Woohoo {
+	Sound {
+		Filename ../Data/Woohoo.wav
+	}
+}
+
+/* HALLELUJAH SOUND */
+Hallelujah {
+	Sound {
+		Filename ../Data/Hallelujah.wav
+	}
+}
+
+/* PLAYER CAMERA */
+PlayerCamera {
+	Camera {
+		Position 0.5 0.5 0.5
+		Direction 1.0 0.0 0.0
+		FieldOfView 30.0
+	}
+}
+
+/* AERIAL CAMERA */
+AerialCamera {
+	Camera {
+		Position 5.0 10.0 5.0
+		Direction 0.0 -1.0 0.0
+		Up 0.0 0.0 -1.0
+		FieldOfView 60.0
+	}
+}
+
+/* PLAYER */
+Player {
+	Number 1
+	Group {
+		Transform {
+		}
+		Polyhedron {
+			Filename ../Data/Player.txt
+			Radius 0.25
+			Material {
+				Ambient 1.0 0.0 0.0
+				Diffuse 1.0 0.0 0.0
+			}
+		}
+	}
+}
+
+/* LIGHTS */
+Lights {
+	Light {
+		Infinite 1
+		Centre 0.0 20.0 10.0
+		Ambient 0.4 0.4 0.4
+		Diffuse 1.0 1.0 1.0
+		Specular 1.0 1.0 1.0
+	}
+	Light {
+		Infinite 0
+		Centre -40.0 10.0 0.0
+		Diffuse 0.5 0.5 0.5
+		Specular 0.5 0.5 0.5
+	}
+	Light {
+		Infinite 0
+		Centre 40.0 10.0 0.0
+		Diffuse 0.5 0.5 0.5
+		Specular 0.5 0.5 0.5
+	}
+}
+
+/* MAZE */
+Maze {
+	// ----- MAZE -----
+	Maze {
+		Width 10
+		Height 10
+		Filename ../Data/Maze.txt
+		Wall Wall
+		Floor Floor
+	}
+}
+
+/* WALL */
+Wall {
+	// ----- WALL -----
+	Group {
+		Transform {
+			Axis 0.0 1.0 0.0
+			Angle 0.1
+		}
+		Reference {
+			Label Brick
+		}
+		Group {
+			Plane {
+				Material {
+					Ambient 0.5 0.5 0.5
+					Diffuse 0.5 0.5 0.5
+					Texture 1
+				}
+				Centre 0.0 0.0 0.051
+				Width 1.1
+				Height 1.0
+			}
+			Transform {
+				Axis 0.0 1.0 0.0
+				Angle 90.0
+			}
+			Plane {
+				Material {
+					Ambient 0.5 0.5 0.5
+					Diffuse 0.5 0.5 0.5
+					Texture 1
+				}
+				Centre 0.0 0.0 0.55
+				Width 0.102
+				Height 1.0
+				Left 0.45
+				Right 0.55
+			}
+		}
+		Transform {
+			Axis 0.0 1.0 0.0
+			Angle 180.0
+		}
+		Group {
+			Plane {
+				Material {
+					Ambient 0.5 0.5 0.5
+					Diffuse 0.5 0.5 0.5
+					Texture 1
+				}
+				Centre 0.0 0.0 0.051
+				Width 1.1
+				Height 1.0
+			}
+			Transform {
+				Axis 0.0 1.0 0.0
+				Angle 90.0
+			}
+			Plane {
+				Material {
+					Ambient 0.5 0.5 0.5
+					Diffuse 0.5 0.5 0.5
+					Texture 1
+				}
+				Centre 0.0 0.0 0.55
+				Width 0.102
+				Height 1.0
+				Left 0.45
+				Right 0.55
+			}
+		}
+		Reference {
+			Label Hedge
+		}
+		Transform {
+			Axis 1.0 0.0 0.0
+			Angle -90.0
+		}
+		Plane {
+			Material {
+				Ambient 0.5 0.5 0.5
+				Diffuse 0.5 0.5 0.5
+				Texture 1
+			}
+			Centre 0.0 0.0 0.5
+			Width 1.1
+			Height 0.102
+			Bottom 0.45
+			Top 0.55
+		}
+	}
+}
+
+/* FLOOR */
+Floor {
+	DisplayList 1
+	Group {
+		// ----- FLOOR -----
+		Transform {
+			Axis 1.0 0.0 0.0
+			Angle -90.0
+		}
+		Plane {
+			Material {
+				Ambient 0.2 0.2 0.2
+				Diffuse 0.2 0.2 0.2
+				Specular 1.0 1.0 1.0
+			}
+			Width 1.0
+			Height 1.0
+		}
+	}
+}
+
+/* GRUB */
+Grub {
+	Number 10
+	Group {
+		// ----- GRUB -----
+		Transform {
+			Scale 1.3 1.3 1.3
+		}
+		Transform {
+			Translate 0.0 0.0 0.2
+		}
+		Group {
+			// ----- GRUB HEAD -----
+			Transform {
+				Axis 0.0 1.0 0.0
+				Spin 10.0
+			}
+			Reference {
+				Label GrubHead
+			}
+		}
+		// ----- GRUB BODY -----
+		Reference {
+			Label GrubBody
+		}
+	}
+}
+
+/* GRUB HEAD */
+GrubHead {
+	DisplayList 1
+	Group {
+		// ----- HEAD -----
+		Sphere {
+			Material {
+				Ambient 1.0 0.0 0.0
+				Diffuse 1.0 0.0 0.0
+				Specular 1.0 1.0 1.0
+			}
+			Radius 0.1
+			Centre 0.0 0.0 0.0
+		}
+		// ----- LEFT EYE -----
+		Group {
+			Transform {
+				Translate -0.05 0.05 0.05
+			}
+			Sphere {
+				Material {
+					Ambient 1.0 1.0 1.0
+					Diffuse 1.0 1.0 1.0
+					Specular 1.0 1.0 1.0
+				}
+				Radius 0.025
+			}
+		}
+		// ----- RIGHT EYE -----
+		Group {
+			Transform {
+				Translate 0.05 0.05 0.05
+			}
+			Sphere {
+				Material {
+					Ambient 1.0 1.0 1.0
+					Diffuse 1.0 1.0 1.0
+					Specular 1.0 1.0 1.0
+				}
+				Radius 0.025
+			}
+		}
+		Transform {
+			Axis 1.0 0.0 0.0
+			Angle -100.0
+		}
+		Transform {
+			Translate 0.0 0.0 0.0875
+		}
+		// ----- HAT -----
+		Cylinder {
+			Material {
+				Ambient 0.0 0.0 1.0
+				Diffuse 0.0 0.0 1.0
+				Specular 1.0 1.0 1.0
+			}
+			Radius 0.05
+			Height 0.1
+			Top 1
+			Bottom 0
+		}
+		// ----- RIM -----
+		Cylinder {
+			Material {
+				Ambient 0.0 0.0 1.0
+				Diffuse 0.0 0.0 1.0
+				Specular 1.0 1.0 1.0
+			}
+			Radius 0.1
+			Height 0.01
+			Top 1
+			Bottom 1
+		}
+	}
+}
+
+/* GRUB BODY */
+GrubBody {
+	DisplayList 1
+	Group {
+		Group {
+			// ----- NECK -----
+			Transform {
+				Translate 0.0 -0.05 0.0
+				Axis 1.0 0.0 0.0
+				Angle 90.0
+			}
+			Cylinder {
+				Material {
+					Ambient 1.0 1.0 0.0
+					Diffuse 1.0 1.0 0.0
+				}
+				Radius 0.0375
+				Height 0.1
+			}
+		}
+		// ----- FRONT -----
+		Transform {
+			Translate 0.0 -0.225 0.0
+		}
+		Sphere {
+			Material {
+				Ambient 1.0 1.0 1.0
+				Diffuse 0.0 0.0 0.0
+				Specular 1.0 1.0 1.0
+				Shininess 100.0
+				Emission 0.0 0.0 0.0
+			}
+			Radius 0.1
+		}
+		// ----- FRONT JOIN -----
+		Transform {
+			Translate 0.0 0.0 -0.225
+		}
+		Cylinder {
+			Material {
+				Ambient 1.0 1.0 0.0
+				Diffuse 1.0 1.0 0.0
+			}
+			Radius 0.05
+			Height 0.15
+		}
+		// ----- MIDDLE -----
+		Sphere {
+			Material {
+				Ambient 1.0 0.0 0.0
+				Diffuse 1.0 0.0 0.0
+				Specular 1.0 1.0 1.0
+			}
+			Radius 0.0875
+		}
+		// ----- BACK JOIN -----
+		Transform {
+			Translate 0.0 0.0 -0.2
+		}
+		Cylinder {
+			Material {
+				Ambient 1.0 1.0 0.0
+				Diffuse 1.0 1.0 0.0
+			}
+			Radius 0.0375
+			Height 0.1
+		}
+		// ----- BACK -----
+		Sphere {
+			Material {
+				Ambient 1.0 0.0 0.0
+				Diffuse 1.0 0.0 0.0
+				Specular 1.0 1.0 1.0
+			}
+			Radius 0.075
+		}
+	}
+}
+
+/* COIN */
+Coin {
+	Number 10
+	Group {
+		Transform {
+			Translate 0.0 0.0 0.025
+			Axis 1.0 0.0 0.0
+			Spin 10.0
+		}
+		Transform {
+			Translate 0.0 0.0 -0.025
+		}
+		Reference {
+			Label CoinList
+		}
+	}
+}
+
+/* COIN LIST */
+CoinList {
+	DisplayList 1
+	// ----- COIN -----
+	Cylinder {
+		Material {
+			Ambient 0.5 0.5 0.0
+			Diffuse 0.5 0.5 0.0
+			Specular 1.0 1.0 1.0
+		}
+		Radius 0.1
+		Height 0.05
+		Top 1
+		Bottom 1
+	}
+}
+
+/* SMALL RHOMBIC OSIDODECAHEDRON */
+SmallRhombicOsidodecahedron {
+	Number 10
+	Group {
+		Transform {
+			Axis 0.0 1.0 0.0
+			Spin 1.0
+		}
+		Reference {
+			Label SmallRhombicOsidodecahedronList
+		}
+	}
+}
+
+/* SMALL RHOMBIC OSIDODECAHEDRON LIST */
+SmallRhombicOsidodecahedronList {
+	DisplayList 1
+	Polyhedron {
+        Filename ../Data/SmallRhombicOsidodecahedron.txt
+        Radius 0.2
+        Material {
+            Ambient 0.0 0.0 1.0
+            Diffuse 0.0 0.0 1.0
+            Specular 0.5 0.5 0.5
+            Shininess 10.0
+        }
+    }
+}
+
+/* TRUNCATED ICOSAHEDRON */
+TruncatedIcosahedron {
+	Number 10
+	Group {
+		Transform {
+			Axis 0.0 0.0 1.0
+			Spin 1.0
+		}
+		Reference {
+			Label TruncatedIcosahedronList
+		}
+	}
+}
+
+/* TRUNCATED ICOSAHEDRON LIST */
+TruncatedIcosahedronList {
+	DisplayList 1
+	Polyhedron {
+		Filename ../Data/TruncatedIcosahedron.txt
+		Radius 0.2
+		Material {
+			Ambient 0.0 0.5 0.0
+			Diffuse 0.0 0.5 0.0
+			Specular 0.5 0.5 0.5
+			Shininess 10.0
+		}
+	}
+}
